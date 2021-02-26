@@ -1,11 +1,11 @@
-<template v-if="s4_start_date">
-    <date-picker-nghia id_input="datepicker_start_date_s4"
-        @selected_date="handle_selected_date_start"
-        :default_date="s4_start_date"
-        format="dd-mm-yy">
-    <input type="text" id="datepicker_start_date_s4"  class="form-control datepicker">
-    </date-picker-nghia>
-</template>
+// <template v-if="s4_start_date">
+//     <date-picker-nghia id_input="datepicker_start_date_s4"
+//         @selected_date="handle_selected_date_start"
+//         :default_date="s4_start_date"
+//         format="dd-mm-yy">
+//     <input type="text" id="datepicker_start_date_s4"  class="form-control datepicker">
+//     </date-picker-nghia>
+// </template>
 
 // handle_selected_date_start(date){
 //     console.log('handle_selected_date_start',date)
