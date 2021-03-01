@@ -1,3 +1,11 @@
+convert_date_string_to_timestamp=(dateString,charDetermine)=>{
+    const L = dateString.split(charDetermine)
+    const day = L[0]
+    const month = L[1] - 1
+    const year = L[2]
+    const timeStamp = (new Date(year,month,day)).getTime()
+    return parseInt(timeStamp)
+}
 get_date_string_from_date_obj = (today,format,determine)=>{
     let dd = String(today.getDate()).padStart(2, '0');
     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
