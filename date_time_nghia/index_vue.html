@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="datetimepicker.css"/>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<title>jQuery datetimepicker Plugin Examples</title>
+</head>
+
+
+
+<body>
+    <div id="app">
+        <date-time-picker-nghia 
+        id_input="datetimepicker" 
+        :format="format"
+        :default_date="default_date"
+        @selected_date_time="handle_selected_date_time"
+        >
+            <input type="text" id="datetimepicker" v-model="time_now"/>
+        </date-time-picker-nghia>
+    </div>
+</body>
+</html>
+
+<script src="jquery.js"></script>
+<script src="datetimepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="date_time_picker_nghia.js"></script>
+
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            format:"d.m.Y H:i" ,
+            default_date:"15.04.2015 05:06"
+        },
+        methods:{
+            handle_selected_date_time(datetime){
+                console.log('datetime',datetime)
+            }
+        }        
+    })
+</script>
