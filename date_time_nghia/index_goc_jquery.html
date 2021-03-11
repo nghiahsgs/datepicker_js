@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="datetimepicker.css"/>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<title>jQuery datetimepicker Plugin Examples</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id="datetimepicker"/><br><br>
+    </div>
+</body>
+</html>
+
+<script src="jquery.js"></script>
+<script src="datetimepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script>
+       $('#datetimepicker').datetimepicker({
+                // value:'2015/04/15 05:06',
+                value:'15.04.2015 05:06',
+                format:'d.m.Y H:i',
+            });
+</script>
